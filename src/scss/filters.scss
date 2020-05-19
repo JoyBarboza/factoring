@@ -1,0 +1,67 @@
+@import './variables.scss';
+
+.filter-wrap {
+  text-align: left;
+
+  .filter-header {
+    margin: 0;
+    margin-bottom: 0;
+  }
+
+  .filter-options {
+    margin-left: 0;
+    margin-bottom: 1.5rem;
+    display: block;
+
+    .el-radio__label {
+      font-weight: bold;
+    }
+
+    .el-radio__input.is-checked .el-radio__inner {
+      border-color: map_get($theme-colors, tertiary);
+      background: map_get($theme-colors, tertiary);
+    }
+
+    .el-radio__input.is-checked+.el-radio__label {
+      color: map_get($theme-colors, tertiary);
+    }
+  }
+
+  .filter-options:last-child {
+    margin-bottom: 0;
+  }
+
+  .el-select {
+    width: 100%;
+  }
+  .el-card{
+    padding: 0px !important;
+  }
+  
+  .el-card__body{
+    padding: 0;
+  }
+
+  .card-header{
+    padding: 0.8rem;
+    color: #ffffff;
+    background-color: #002d7b;
+  }
+
+  .card-content {
+    padding: 1rem;
+
+    .card-row {
+      padding: 0.5rem 0rem;
+      font-size: 0.9rem;
+      
+      &:first-child {
+        padding-top: 0;
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
